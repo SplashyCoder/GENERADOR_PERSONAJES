@@ -1,6 +1,6 @@
-package Codigo.Aramdura.TIPOS;
+package Codigo.Armaduras.TIPOS;
 
-import Codigo.Aramduras.Peto;
+import Codigo.Armaduras.Peto;
 
 public class Peto_cuero implements Peto{
 
@@ -12,38 +12,6 @@ public class Peto_cuero implements Peto{
 	@Override
 	public String getImage() {
 		return "/Material/petoCuero.png" ;
-	}
-
-	@Override
-	public int getCasco() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getGrebas() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getPeto() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getEscarpe() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getYelmo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	
+	}	
 
 }

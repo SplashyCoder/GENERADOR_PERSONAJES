@@ -1,6 +1,6 @@
 package Codigo.Armaduras;
 
-public interface Grebas extends Armadura {
+public interface Greba {
     public String getStats();
     public String getImage(); 
 }

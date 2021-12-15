@@ -1,6 +1,6 @@
-package Codigo.Aramdura.TIPOS;
+package Codigo.Armaduras.TIPOS;
 
-import Codigo.Aramduras.Escarpe;
+import Codigo.Armaduras.Escarpe;
 
 public class Escarpe_cuero implements Escarpe{
 
@@ -13,37 +13,5 @@ public class Escarpe_cuero implements Escarpe{
 	public String getImage() {
 		return "/Material/escarpeCuero.png" ;
 	}
-
-	@Override
-	public int getCasco() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getGrebas() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getPeto() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getEscarpe() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getYelmo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	
 
 }

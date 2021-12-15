@@ -1,6 +1,6 @@
 package Codigo.Armaduras;
 
-public interface Peto extends Armadura {
+public interface Peto {
     public String getStats();
     public String getImage(); 
 }

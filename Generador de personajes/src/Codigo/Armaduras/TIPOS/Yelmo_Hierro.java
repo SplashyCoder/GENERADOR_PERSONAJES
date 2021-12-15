@@ -1,8 +1,8 @@
-package Codigo.Aramdura.TIPOS;
+package Codigo.Armaduras.TIPOS;
 
-import Codigo.Aramduras.Yelmo;
+import Codigo.Armaduras.Yelmo;
 
-public class Yelmo_hierro implements Yelmo{
+public class Yelmo_Hierro implements Yelmo{
 
     @Override
 	public String getStats() {
@@ -14,36 +14,5 @@ public class Yelmo_hierro implements Yelmo{
 		return "/Material/yelmoHierro.png" ;
 	}
 
-	@Override
-	public int getCasco() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getGrebas() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getPeto() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getEscarpe() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getYelmo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	
 
 }
