@@ -1,6 +1,4 @@
-package Codigo.Armaduras;
-
-public interface Armadura {
+public interface Aramdura {
 	public abstract int getCasco();
     public abstract int getGrebas();
     public abstract int getPeto();

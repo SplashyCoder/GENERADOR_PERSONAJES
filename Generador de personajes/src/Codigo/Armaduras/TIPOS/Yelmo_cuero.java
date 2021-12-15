@@ -6,7 +6,7 @@ public class Yelmo_cuero implements Yelmo {
 
 	@Override
 	public String getStats() {
-		return "Casco de baja protección creado con el cuero más fino del mundo";
+		return "Armadura 7";
 	}
 
 	@Override

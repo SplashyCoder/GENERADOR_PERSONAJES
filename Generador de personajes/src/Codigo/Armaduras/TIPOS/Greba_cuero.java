@@ -1,17 +1,17 @@
 package Codigo.Aramdura.TIPOS;
 
-import Codigo.Aramduras.Escarpe;
+import Codigo.Aramduras.Grebas;
 
-public class Escarpe_cuero implements Escarpe{
+public class Greba_cuero implements Grebas{
 
     @Override
 	public String getStats() {
-		return "Armadura 3";
+		return "Armadura 2";
 	}
 
 	@Override
 	public String getImage() {
-		return "/Material/escarpeCuero.png" ;
+		return "/Material/grebaCuero.png" ;
 	}
 
 	@Override
