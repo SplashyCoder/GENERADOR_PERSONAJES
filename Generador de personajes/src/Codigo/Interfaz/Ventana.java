@@ -56,6 +56,8 @@ public class Ventana extends JFrame{
 	public void capturarEventos() {
 		
 		panelInicial.getBotonSalir().addActionListener(getControl());
+		panelInicial.getBotonCrear().addActionListener(getControl());
+		panelCreacion.getBotonVolver().addActionListener(getControl());
 		
 	}
 	

@@ -11,7 +11,7 @@ public class Greba_hierro implements Greba{
 
 	@Override
 	public String getImage() {
-		return "/Material/grebaDiamante.png" ;
+		return "/Material/grebaHierro.png" ;
 	}
 
 }
