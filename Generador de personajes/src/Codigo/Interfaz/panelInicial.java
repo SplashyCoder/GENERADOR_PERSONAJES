@@ -1,4 +1,4 @@
-package Codigo;
+package Codigo.Interfaz;
 
 import java.awt.Font;
 

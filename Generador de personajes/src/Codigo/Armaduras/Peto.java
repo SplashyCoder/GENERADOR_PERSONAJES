@@ -1,4 +1,6 @@
-public interface Peto extends Aramdura()[
-    public String getStats():
-    public String getImage(): 
-]
+package Codigo.Armaduras;
+
+public interface Peto extends Armadura {
+    public String getStats();
+    public String getImage(); 
+}

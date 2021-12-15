@@ -1,4 +1,6 @@
-public interface Yelmo extends Aramdura()[
-    public String getStats():
-    public String getImage(): 
-]
+package Codigo.Armaduras;
+
+public interface Yelmo extends Armadura {
+    public String getStats();
+    public String getImage();
+}

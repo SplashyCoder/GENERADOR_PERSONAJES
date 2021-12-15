@@ -1,4 +1,4 @@
-package Codigo;
+package Codigo.Interfaz;
 
 public class Main {
 	
