@@ -1,7 +1,7 @@
 public interface Aramdura {
-	public abstract int getCasco();
-    public abstract int getGrebas();
-    public abstract int getPeto();
-    public abstract int getEscarpe();
-    public abstract int getYelmo();
+	public abstract String getCasco();
+    public abstract String getGrebas();
+    public abstract String getPeto();
+    public abstract String getEscarpe();
+    public abstract String getYelmo();
 }
