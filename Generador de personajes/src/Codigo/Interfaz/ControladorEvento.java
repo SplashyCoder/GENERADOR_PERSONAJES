@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 
 import Codigo.Armaduras.Escarpe;
 import Codigo.Armaduras.Greba;
+import Codigo.Armaduras.Personaje;
 import Codigo.Armaduras.Peto;
 import Codigo.Armaduras.Yelmo;
 import Codigo.Armaduras.Fabricas.FabricaAbstracta;
@@ -61,7 +62,7 @@ public class ControladorEvento implements ActionListener {
 		
 		if ((Integer)panelInicial.getNumPersonaje().getValue() == 0) {
 			
-			JOptionPane.showMessageDialog(null,"¡Error al crear los personajes!","Intentelo de nuevo...",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,"ï¿½Error al crear los personajes!","Intentelo de nuevo...",JOptionPane.ERROR_MESSAGE);
 			
 			bandera++;
 			
@@ -102,7 +103,7 @@ public class ControladorEvento implements ActionListener {
                 fabrica = new FabricaDiamante();
                 break;
             default:
-            	JOptionPane.showMessageDialog(null,"¡Algo salió mal!","Saliendo del programa...",JOptionPane.ERROR_MESSAGE);
+            	JOptionPane.showMessageDialog(null,"ï¿½Algo saliï¿½ mal!","Saliendo del programa...",JOptionPane.ERROR_MESSAGE);
             	salir();
                 break;
         }
@@ -132,9 +133,35 @@ public class ControladorEvento implements ActionListener {
 		panelCreacion.getTablaPersona().setDefaultRenderer(Object.class, new ImgTabla());
 		
 		int contador = 0;
-		
+	
 		int numeroPersonaje = (Integer)panelInicial.getNumPersonaje().getValue();
 		int tipoArmadura = panelInicial.getTipoArmadura().getSelectedIndex();
+
+		Personaje personaje;
+
+		personaje = Personaje.getInstancia();
+
+		switch (panelInicial.getTipoArmadura().getSelectedIndex()) {
+		
+            case 0:
+                personaje.setArmadura("/Material/armaduraCuero.png");
+                break;
+            case 1:
+				personaje.setArmadura("/Material/armaduraHierro.png");
+                break;
+            case 2:
+				personaje.setArmadura("/Material/armaduraOro.png");
+                break;
+            case 3:
+				personaje.setArmadura("/Material/armaduraDiamante.png");
+                break;
+            default:
+            	JOptionPane.showMessageDialog(null,"ï¿½Algo saliï¿½ mal!","Saliendo del programa...",JOptionPane.ERROR_MESSAGE);
+            	salir();
+                break;
+        }
+
+
 		
 		
 		
@@ -158,7 +185,7 @@ public class ControladorEvento implements ActionListener {
         
         for(int i=0; i < numeroPersonaje; i++){
         	
-        	Object[] data = {new JLabel (new ImageIcon(ControladorEvento.class.getResource("/Material/armaduraCuero.png")))};
+        	Object[] data = {new JLabel (new ImageIcon(ControladorEvento.class.getResource(personaje.getArmadura())))};
         	
             modeloTabla.addRow(data);
             contador++;
