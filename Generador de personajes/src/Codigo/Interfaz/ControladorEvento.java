@@ -129,13 +129,13 @@ public class ControladorEvento implements ActionListener {
 	
 	public void ejecutarSingletonEnCreacion(panelInicial panelInicial, panelCreacion panelCreacion) {
 		
+		panelCreacion.getTablaPersona().setDefaultRenderer(Object.class, new ImgTabla());
+		
 		int contador = 0;
 		
 		int numeroPersonaje = (Integer)panelInicial.getNumPersonaje().getValue();
+		int tipoArmadura = panelInicial.getTipoArmadura().getSelectedIndex();
 		
-		System.out.print(numeroPersonaje);
-		
-		String[] personajes = new String[numeroPersonaje];
 		
 		
 		String[] nombreColumna = {"PERSONAJE"};
@@ -153,25 +153,23 @@ public class ControladorEvento implements ActionListener {
         };
        
         modeloTabla.setColumnIdentifiers(nombreColumna); 
-        panelCreacion.getTablaPersona().setModel(modeloTabla);
+        panelCreacion.getTablaPersona().setModel(modeloTabla);     
         
         
         for(int i=0; i < numeroPersonaje; i++){
-        	
-        	//"/Material/armaduraCuero.png"
         	
         	Object[] data = {new JLabel (new ImageIcon(ControladorEvento.class.getResource("/Material/armaduraCuero.png")))};
         	
             modeloTabla.addRow(data);
             contador++;
-		
-	}
+            
+        }
         
-        panelCreacion.getTablaPersona().setRowHeight(132);
+        panelCreacion.getTablaPersona().setRowHeight(130);
         panelCreacion.getTablaPersona().getColumnModel().getColumn(0).setResizable(false);        
         panelCreacion.getTablaPersona().getTableHeader().setReorderingAllowed(false) ;
 		
-		
+        
 	}
 	
 	public void cambiarAPanelInicial (panelInicial panelInicial, panelArmadura panelArmadura, panelCreacion panelCreacion) {
